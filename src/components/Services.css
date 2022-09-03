@@ -1,0 +1,181 @@
+.servicescdoctosimg{
+
+    width: 100px;
+    height: 80px;
+}
+
+
+.services_doct{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+   background-color: #ffff;
+   flex-direction: column;
+border-radius: 20px;
+}
+.services_doct h3 ,p{
+
+    padding: 10px;
+}
+
+
+.services_grid{
+
+    display: grid;
+    grid-template-columns: repeat(4,200px );
+    gap: 20px;
+
+
+justify-content: center;
+}
+
+.services_doct:hover{
+
+    background: #ededed;
+   
+    cursor: pointer;
+
+}
+
+
+.services_main{
+
+    display: flex;
+    flex-direction: column;
+text-align: center;
+padding: 40px;
+}
+.services_main h1{
+
+    padding: 40px;
+}
+
+
+.heroservice h1{
+
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+.services_other{
+
+    display: grid;
+    grid-template-columns: repeat(2,400px );
+    grid-template-rows: repeat(3,150px );
+    gap: 40px;
+
+    cursor: pointer;
+
+justify-content: center;
+}
+
+
+.othergridchild{
+
+    
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 200px; */
+        /* height: 200px; */
+       flex-direction: column;
+       
+       
+    }
+    
+    
+    
+    .services_other img{
+        
+        
+        border-radius: 50%;
+        width: 60px;
+        height: 50px;
+        /* position: relative; */
+        padding-right:10px ;
+        
+    }
+    
+    
+    
+    .dieseaseimg{
+        
+        display: flex;
+        justify-content: center;
+        
+        align-items: center;
+        background-color: #ffff;
+        border-radius: 20px;
+    }
+    
+    .dieseaseimg:hover{
+        background: #ededed;
+       
+        cursor: pointer;
+    }
+
+
+
+
+    
+
+
+
+    @media only screen and (max-width:600px) {
+        
+
+
+        .services_grid{
+
+            display: grid;
+            grid-template-columns: repeat(2,180px );
+            gap: 20px;
+        
+        
+        justify-content: center;
+        }
+        
+        
+.services_other{
+
+    display: grid;
+    grid-template-columns: repeat(1,400px );
+    grid-template-rows: repeat(6,200px );
+    gap: 40px;
+
+    cursor: pointer;
+
+justify-content: center;
+}
+
+
+.services_doct{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 200px;
+   background-color: #ffff;
+   flex-direction: column;
+border-radius: 20px;
+}
+
+
+
+.services_main h1 {
+
+    padding-top: 10px;
+}
+
+
+
+    }

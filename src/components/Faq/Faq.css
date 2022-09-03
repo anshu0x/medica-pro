@@ -1,0 +1,51 @@
+.faq_outside h1{
+
+    text-align: center;
+    padding: 40px;
+
+}
+
+.faq_outside{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+align-items: center;
+}
+
+.accordion{
+ 
+    width: 60vw;
+}    
+
+
+.typography{
+
+font-size: 2px;
+text-align: left;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    
+
+    .accordion{
+ 
+        width: 90vw;
+
+    }    
+    
+    .faq_outside h1{
+
+        text-align: center;
+        padding: 20px;
+    
+    }
+    
+
+}

@@ -1,0 +1,54 @@
+.ourvision{
+
+
+    display: flex;
+    /* flex-grow: 100; */
+    flex-wrap: wrap;
+width: 80vw;
+
+}
+
+
+.ourvis{
+
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    background-color: #f7f7f7;
+}
+.ourvision h2{
+
+
+    text-align: left;
+    /* line-height: 210px; */
+
+
+}
+
+.ourvision p {
+
+    text-align: left;
+    width: 90%;
+
+}
+
+
+.ourvision div{
+
+    width: 50%;
+    /* background-color: aliceblue; */
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 20px;
+
+}
+
+
+.ourvision img{
+
+width: 85%;
+height: 70%;
+border-radius: 20px;
+
+}

@@ -1,0 +1,67 @@
+.hmaravision{
+
+
+    
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.hmaravisoonbdy{
+    background-color: #D6E5F3;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.hmarachildvision{
+
+    width: 50%;
+
+    display: flex;
+    /* align-content: center; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.hmarachildvision img {
+
+
+    width: 85%;
+    border-radius: 20px;
+    height: 70%;
+}
+
+
+
+.hmarachildvision p {
+
+    text-align: left;
+    width: 40vw;
+
+}
+
+
+
+
+
+@media only screen and (max-width:600px) {
+
+    
+
+    .hmarachildvision p {
+
+        text-align: left;
+        width: 100vw;
+    
+    }
+    
+
+}

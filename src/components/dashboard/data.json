@@ -1,0 +1,257 @@
+[
+  {
+    "region": "Uttar Pradesh",
+    "country_code": "up",
+    "states": [
+      {
+        "sname": "Prayagraj",
+        "scode": "pr",
+        "city": [
+          {
+            "cname": "Naini",
+            "ccode": "nai"
+            
+          },
+          {
+            "cname": "Karchhana",
+            "ccode": "ka"
+          },
+          {
+            "cname": "Sirsa",
+            "ccode": "si"
+          },
+          {
+            "cname": "Civil Lines",
+            "ccode": "civ"
+          }
+        ]
+      },
+      {
+        "sname": "Barabanki",
+        "scode": "bara",
+        "city": [
+          {
+            "cname": "Fatehpur",
+            "ccode": "fat"
+          },
+          {
+            "cname": "Suratganj",
+            "ccode": "stj"
+          },
+          {
+            "cname": "Nawabganj",
+            "ccode": "naw"
+          }
+        ]
+      },
+      {
+        "sname": "Jaunpur",
+        "scode": "jau",
+        "city": [
+          {
+            "cname": "Badlapur",
+            "ccode": "ba"
+          },
+          {
+            "cname": "Shahganj",
+            "ccode": "sh"
+          }
+        ]
+      },
+      {
+        "sname": "Sultanpur",
+        "scode": "sul",
+        "city": [
+          {
+            "cname": "Dubepur",
+            "ccode": "du"
+          },
+          {
+            "cname": "Dhanpatganj",
+            "ccode": "dhan"
+          },
+          {
+            "cname": "Kurwar",
+            "ccode": "ku"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Rajasthan",
+    "country_code": "RJ",
+    "states": [
+      {
+        "sname": "Jaipur",
+        "scode": "JP",
+        "city": [
+          {
+            "cname": "Jaipur Municipal Corporation",
+            "ccode": "JMP"
+          },
+          {
+            "cname": "Bagrana Census Town",
+            "ccode": "BCT"
+          }
+        ]
+      },
+      {
+        "sname": "Kota",
+        "scode": "KT",
+        "city": [
+          {
+            "cname": "Mahavir Nagar",
+            "ccode": "MNR"
+          },
+          {
+            "cname": "Rajiv Gandhi Nagar",
+            "ccode": "RGN"
+          }
+        ]
+      },
+      {
+        "sname": "Bundi",
+        "scode": "BDI",
+        "city": [
+          {
+            "cname": "Galwar",
+            "ccode": "GLR"
+          },
+          {
+            "cname": "Tinduri",
+            "ccode": "TDI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Panjab",
+    "country_code": "PB",
+    "states": [
+      {
+        "sname": "Amritsar",
+        "scode": "ATR",
+        "city": [
+          {
+            "cname": "Amritsar Municipal Corporation",
+            "ccode": "AMP"
+          },
+          {
+            "cname": "Amritsar Town",
+            "ccode": "AT"
+          }
+        ]
+      },
+      {
+        "sname": "Faridkot",
+        "scode": "FT",
+        "city": [
+          {
+            "cname": "Faridkot city",
+            "ccode": "FTC"
+          },
+          {
+            "cname": "Lal Nagar",
+            "ccode": "LLN"
+          }
+        ]
+      },
+      {
+        "sname": "Bhatinda",
+        "scode": "BTA",
+        "city": [
+          {
+            "cname": "Bhatinda city",
+            "ccode": "FTC"
+          },
+          {
+            "cname": "Rajpath",
+            "ccode": "RPH"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Maharashtra",
+    "country_code": "MAH",
+    "states": [
+      {
+        "sname": "Mumbai",
+        "scode": "MB",
+        "city": [
+          {
+            "cname": "Mumbai Municipal Corporation",
+            "ccode": "MMC"
+          },
+          {
+            "cname": "Mumbai Census Town",
+            "ccode": "MCT"
+          }
+        ]
+      },
+      {
+        "sname": "Pune",
+        "scode": "PE",
+        "city": [
+          {
+            "cname": "Pune Municipal Corporation",
+            "ccode": "PMC"
+          },
+          {
+            "cname": "Pune Census Town",
+            "ccode": "PCT"
+          }
+        ]
+      },
+      {
+        "sname": "Amrawati",
+        "scode": "AMR",
+        "city": [
+          {
+            "cname": "Lakshmanpuri",
+            "ccode": "LKI"
+          },
+          {
+            "cname": "Indiranagar",
+            "ccode": "ING"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Himachal Pradesh",
+    "country_code": "him",
+    
+    "states": [
+      {
+        "sname": "Kullu",
+        "scode": "ku",
+        "city": [
+          {
+            "cname": "Banjar",
+            "ccode": "ban"
+            
+          },
+          {
+            "cname": "Neethar",
+            "ccode": "nea"
+          }
+        ]
+      },
+      {
+        "sname": "Manali",
+        "scode": "ku",
+        "city": [
+          {
+            "cname": "Bhuntar",
+            "ccode": "bhun"
+          }
+        ]
+      }
+    ]
+  }
+]

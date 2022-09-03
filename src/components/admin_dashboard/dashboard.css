@@ -1,0 +1,441 @@
+/* navbar for dashboard  */
+
+
+button a{
+
+text-decoration: none;
+color: white
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Poppins:wght@300&family=Signika:wght@300;400;500&display=swap');
+
+.dropbtn {
+    background-color: #D6E5F3;
+    /* color: white; */
+    padding: 16px;
+    font-size: 20px;
+    /* font-weight: 400;     */
+    border: none;
+    cursor: pointer;
+
+  }
+
+
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+/* padding-right: 10px; */
+/* gap: 10px; */
+    /* align-items: center; */
+  }
+  
+  /* Dropdown Con
+  tent (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* padding-left: 10px; */
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #fff;
+  }
+
+
+
+  .dashboard-nav a{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 10px; */
+    /* flex-direction: column; */
+    gap: 10px
+    ;
+  }
+
+
+  .dropbtn{
+
+  font-family: 'Signika', sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-right: 10px;
+  margin-right: 10px;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+/* yha se suru hai form appointment wala */
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  /* background-color: ; */
+  width: 50vw;
+}
+
+.container h1,p {
+
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.forms_login{
+
+display: flex;
+justify-content: center;
+padding-top: 40px;
+
+}
+
+/* Full-width input fields */
+.container input[type=text], input[type=password] {
+  width: 100%;
+  border: none;
+  background: #ffffff;
+}
+
+.container input[type=text]:focus, input[type=password]:focus {
+  background-color:#f7f7f7;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #09637a;
+  color: white;
+  /* padding: 16px 20px; */
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn a {
+
+  color: white;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+.container a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+
+
+
+
+.selectbox{
+
+  width: 100px;
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100%;
+  /* padding: 15px; */
+  margin: 5px 0 22px ;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+}
+
+
+
+
+
+label{
+
+  display: block;
+}
+
+
+
+input{
+
+  border-radius: 0;
+}
+
+
+
+
+.hidden_data{
+
+
+  display: none;
+}
+
+
+
+button:disabled{
+
+  color: black;
+
+  background-color: rgb(49, 157, 190);
+}
+
+
+
+
+
+.registerbtn{
+
+/* display: none; */
+  color: white;
+}
+
+.dhboardmin{
+
+
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.modaldivder{
+
+
+  line-height: 60px;
+  width: 400px;
+  height: 300px;
+ 
+} 
+
+/*----------------------------------------------*/
+
+.servicescdoctosimg{
+
+  width: 100px;
+  height: 80px;
+}
+
+
+.services_doct{
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+ background-color: #ffff;
+ flex-direction: column;
+border-radius: 20px;
+}
+.services_doct h3 ,p{
+
+  padding: 10px;
+}
+
+
+.services_grid{
+
+  display: grid;
+  grid-template-columns: repeat(4,200px );
+  gap: 20px;
+
+
+justify-content: center;
+}
+
+.services_doct:hover{
+
+  background: #ededed;
+ 
+  cursor: pointer;
+
+}
+
+
+.services_main{
+
+  display: flex;
+  flex-direction: column;
+text-align: center;
+padding: 40px;
+}
+.services_main h1{
+
+  padding: 40px;
+}
+
+
+.heroservice h1{
+
+  text-align: center;
+  padding: 40px;
+}
+
+
+
+.services_other{
+
+  display: grid;
+  grid-template-columns: repeat(2,400px );
+  grid-template-rows: repeat(3,150px );
+  gap: 40px;
+
+  cursor: pointer;
+
+justify-content: center;
+}
+
+
+.othergridchild{
+
+  
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* width: 200px; */
+      /* height: 200px; */
+     flex-direction: column;
+     
+     
+  }
+  
+  
+  
+  .services_other img{
+      
+      
+      border-radius: 50%;
+      width: 60px;
+      height: 50px;
+      /* position: relative; */
+      padding-right:10px ;
+      
+  }
+  
+  
+  
+  .dieseaseimg{
+      
+      display: flex;
+      justify-content: center;
+      
+      align-items: center;
+      background-color: #ffff;
+      border-radius: 20px;
+  }
+  
+  .dieseaseimg:hover{
+      background: #ededed;
+     
+      cursor: pointer;
+  }
+
+
+
+
+  
+
+
+
+  @media only screen and (max-width:600px) {
+      
+
+
+      .services_grid{
+
+          display: grid;
+          grid-template-columns: repeat(2,180px );
+          gap: 20px;
+      
+      
+      justify-content: center;
+      }
+      
+      
+.services_other{
+
+  display: grid;
+  grid-template-columns: repeat(1,400px );
+  grid-template-rows: repeat(6,200px );
+  gap: 40px;
+
+  cursor: pointer;
+
+justify-content: center;
+}
+
+
+.services_doct{
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 200px;
+ background-color: #ffff;
+ flex-direction: column;
+border-radius: 20px;
+}
+
+
+
+.services_main h1 {
+
+  padding-top: 10px;
+}
+
+
+
+  }
