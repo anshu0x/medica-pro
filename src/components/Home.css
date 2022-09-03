@@ -1,100 +1,66 @@
-.home{
-
-display: flex;
-align-items: center;
-justify-content:center;
-
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.doctors_card{
-  
+.doctors_card {
   width: 80vw;
 
-height: 500px;
+  height: 500px;
 
-/* border: 1px solid; */
-flex-direction: column;
-padding-top: 70px;
+  /* border: 1px solid; */
+  flex-direction: column;
+  padding-top: 70px;
 }
 
-
-
-
-
-.doctors_card h1{
+.doctors_card h1 {
   /* border: 1px solid; */
-  
+
   text-align: left;
-    /* text-align-last: left; */
+  /* text-align-last: left; */
 
   /* line-height: 92px; */
 
   /* width: 900px; */
   font-size: 5rem;
-font-weight: bolder ;
-color: #00234B;
-
-
+  font-weight: bolder;
+  color: #00234b;
 }
 
-
-.input_field{
-
+.input_field {
   /* width: 150px; */
   height: 60px;
   border: none;
-outline: none;
+  outline: none;
 }
 
-.input_field::placeholder{
-
-padding-left: 20px;
-color: #00234B;
-
-  
+.input_field::placeholder {
+  padding-left: 20px;
+  color: #00234b;
 }
 
-
-
-.input_field:focus{
-
+.input_field:focus {
   padding-left: 15px;
-  
 }
 
-
-
-
-
-
-
-.find_doctors{
-  
-  
-  
+.find_doctors {
   display: grid;
   gap: 2px;
-  
-  grid-template-columns: repeat(4,1fr) 100px; 
+
+  grid-template-columns: repeat(4, 1fr) 100px;
   padding-top: 40px;
 }
 
-
-.find_doctors div{
-
-  background-color: #ffff; 
+.find_doctors div {
+  background-color: #ffff;
   padding-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-
-#search_inp_grid{
-
-
+#search_inp_grid {
   background-color: yellow;
   border: none;
   font-size: 1.2rem;
@@ -102,126 +68,83 @@ color: #00234B;
   font-weight: bolder;
 }
 
-
-.text_doctors  span:before {
-
-content: "";
-animation: 10s infinite animate ease-in-out;
-
+.text_doctors span:before {
+  content: "";
+  animation: 10s infinite animate ease-in-out;
 }
 
-
-
-
-
-@keyframes animate  {
-
-
-  0%{
-content: "doctors";
-
+@keyframes animate {
+  0% {
+    content: "doctors";
+  }
+  30% {
+    content: "dermatologists";
+  }
+  65% {
+    content: "OB-GYNs";
+  }
+  100% {
+    content: "dentists";
+  }
 }
-30%{
-  
-  content: "dermatologists";
-  
-}
-65%{
-  
-  content: "OB-GYNs";
-
-}
-100%{
-  
-  content: "dentists";
-
-}
-
-}
-
-
-
 
 @media only screen and (max-width: 600px) {
- 
-  .doctors_card h1{
+
+.doctors_card {
+  width: 100%;
+
+}
+  .doctors_card h1 {
     font-size: 1.6rem;
     line-height: 40px;
-  font-weight: bolder ;
-  color: #00234B;
+    font-weight: bolder;
+    color: #00234b;
   }
 
-
-  .doctors_card{  
-
-padding-top: 10px;
-
+  .doctors_card {
+    padding-top: 10px;
   }
 
-
-
-.find_doctors {
-
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  grid-template-rows: repeat(4,1fr) 50px;
-
-
-
-}
-
-#search_inp_grid{
-
-
-  background-color: yellow;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  font-weight: bolder;
-}
-
-
-
-
-
-
-.find_doctors div{
-
-  background-color: #ffff; 
-  /* padding-bottom: 11px; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-.input_field::placeholder{
-
-  /* padding-right: 10px; */
-  padding: 0;
-  color: #00234B;
-  
-    
+  .find_doctors {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr) 50px;
   }
 
-  
-  .input_field{
+  #search_inp_grid {
+    background-color: yellow;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bolder;
+  }
 
+  .find_doctors div {
+    background-color: #ffff;
+    /* padding-bottom: 11px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .input_field::placeholder {
+    /* padding-right: 10px; */
+    padding: 0;
+    color: #00234b;
+  }
+
+  .input_field {
     /* width: 350px; */
     width: 80vw;
 
     height: 60px;
     border: none;
-  outline: none;
-  padding: 10px;
-  margin: 0;
+    outline: none;
+    padding: 10px;
+    margin: 0;
   }
 
-  .input_field:focus{
-
+  .input_field:focus {
     padding-left: 10px;
-    
   }
-
-  
 }

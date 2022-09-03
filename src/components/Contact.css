@@ -4,10 +4,9 @@
   padding: 40px;
   gap: 20px;
 }
-.grid_child >p{
-
-    position: relative;
-    bottom: -10px;
+.grid_child > p {
+  position: relative;
+  bottom: -10px;
 }
 .grid_child {
   background: #ededed;
@@ -22,9 +21,6 @@
   cursor: pointer;
 
   height: 200px;
-  /* border: 1px solid; */
-  /* display: flex; */
-  /* justify-content: center; */
   border-radius: 10px;
   text-align: left;
 }
@@ -68,7 +64,7 @@
   }
   .grid_child {
     background: #ededed;
-    width: 170px;
+    width: 260px;
     display: flex;
 
     flex-direction: column;
@@ -79,23 +75,19 @@
     cursor: pointer;
 
     height: 200px;
-    /* border: 1px solid; */
-    /* display: flex; */
-    /* justify-content: center; */
     border-radius: 10px;
     text-align: left;
   }
-.grid_child h5{
-
+  .grid_child h5 {
     position: relative;
     bottom: 10px;
-}
-.grid_child >p{
-
+  }
+  .grid_child > p {
     position: relative;
     bottom: -10px;
+  }
+  
+.contact_grid {
+  height: 100vh;
 }
-
-
-
 }

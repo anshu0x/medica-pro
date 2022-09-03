@@ -1,26 +1,18 @@
-.healthcarec{
-
-
-    background-color: #F7F7F7;
-  }
-  
-  
-  .partnership{
-    
-    background-color: #F7F7F7;
-    width: 100vw;
-
+.healthcarec {
+  background-color: #f7f7f7;
 }
 
+.partnership {
+  background-color: #f7f7f7;
+  width: 100%;
+}
 
 .grid_pic {
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: (1, 1fr);
   grid-gap: 10px;
 }
-
 
 .outergrid {
   display: flex;
@@ -52,7 +44,7 @@
   width: 500px;
 }
 
- #partners {
+#partners {
   height: 40px;
   width: 200px;
   display: flex;
@@ -61,104 +53,79 @@
   text-decoration: none;
   background-color: rgb(255, 251, 0);
   color: rgb(8, 0, 0);
-  
+
   position: relative;
   top: 20px;
   /* padding-top: 20px; */
 }
 
-#partners a{
-  
+#partners a {
   text-decoration: none;
-
-
 }
 
-
-
-
-@media only  screen and (max-width:600px) {
-
+@media only screen and (max-width: 600px) {
   .grid_pic {
-
     display: grid;
-    grid-template-columns:1fr ;
+    grid-template-columns: 1fr;
     grid-template-rows: (3, 1fr);
     grid-gap: 10px;
     justify-content: center;
-
   }
-  
-  .grid_pic div{
-    background-color: #F7F7F7;
+
+  .grid_pic div {
+    background-color: #f7f7f7;
 
     margin: auto;
   }
-  
-  .healthcarec{
 
-
+  .healthcarec {
     padding-top: 200px;
-
-  }
-  
-  .healthcarec >h1 {
-  padding-bottom: 100px;
-  text-align: center;
-  color: black;
-  position: relative;
-  /* display: block; */
-  bottom: 200px;
-  font-size: 1.6rem;
-  line-height: 40px;
-}
-
-
-.partnership{
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-top: 350px;
-  
   }
 
+  .healthcarec > h1 {
+    padding-bottom: 100px;
+    text-align: center;
+    color: black;
+    position: relative;
+    /* display: block; */
+    bottom: 200px;
+    font-size: 1.6rem;
+    line-height: 40px;
+  }
 
-.partnership img{
-width: 10vw;
-display: none;
+  .partnership {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 350px;
 
- 
+  }
 
+  .partnership img {
+    width: 10vw;
+    display: none;
   }
 
   #partners {
-  display: none;
-
+    display: none;
   }
 
-
-  .partnership div p,h4{
-
+  .partnership div p,
+  h4 {
     /* padding-top: 10px; */
     padding-bottom: 40px;
   }
 
-
   .outergrid {
-  display: flex;
-  justify-content: center;
-  height: 80vh;
-  align-items: center;
-  /* width: 80vw; */
-}
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    /* width: 80vw; */
+  }
 
-.partnership img {
-  width: 100vw;
-}
-
-
-
-
+  .partnership img {
+    width: 100vw;
+  }
 }
