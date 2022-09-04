@@ -10,7 +10,6 @@ import { FaIdCard } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 
 import Contact from "./Contact";
-import Footer from "./Footer";
 function Home() {
   return (
     <>
@@ -54,6 +53,7 @@ function Home() {
               />
             </div>
             <button id="search_inp_grid">
+              {" "}
               <BsSearch />
             </button>
           </div>
@@ -64,7 +64,6 @@ function Home() {
       <Topspecialist />
 
       <Contact />
-      {/* <Footer /> */}
     </>
   );
 }

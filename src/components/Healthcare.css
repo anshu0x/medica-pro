@@ -83,8 +83,8 @@
   }
 
   .healthcarec > h1 {
-    padding-bottom: 100px;
     text-align: center;
+    padding: 1rem;
     color: black;
     position: relative;
     /* display: block; */

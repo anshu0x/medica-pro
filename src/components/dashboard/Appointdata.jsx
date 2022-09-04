@@ -9,10 +9,10 @@ import DialogActions from "@mui/material/DialogActions";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
-import CheckIcon from '@mui/icons-material/Check';
-import {useHistory } from 'react-router-dom';
+import CheckIcon from "@mui/icons-material/Check";
+import { useHistory } from "react-router-dom";
 
-import './dashboard.css'
+import "./dashboard.css";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -26,9 +26,6 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 const BootstrapDialogTitle = (props) => {
   const { children, onClose, ...other } = props;
 
-  
-
-  
   return (
     <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
       {children}
@@ -58,25 +55,25 @@ BootstrapDialogTitle.propTypes = {
 export default function CustomizedDialogs(props) {
   const [open, setOpen] = React.useState(false);
   //const [disable, setDisable] = React.useState(false);
-  var history=useHistory();
-  const gotodetail = async (e) =>{
-
+  var history = useHistory();
+  const gotodetail = async (e) => {
     e.preventDefault();
-    history.push('/doctor_details');
-  }
+    history.push("/doctor_details");
+  };
   const handleClickOpen = () => {
     setOpen(true);
   };
   const handleClose = () => {
     setOpen(false);
   };
- 
-  
 
   return (
     <div>
-     
-      <Button variant="contained" onClick={props.handleClickOpen} disabled={!props.hspname}>
+      <Button
+        variant="contained"
+        onClick={props.handleClickOpen}
+        disabled={!props.hspname}
+      >
         Go to details
       </Button>
       <BootstrapDialog
@@ -88,39 +85,79 @@ export default function CustomizedDialogs(props) {
           id="customized-dialog-title"
           onClose={props.handleClose}
         >
-      <b>  Book an Appointment </b>    
+          <b> Book an Appointment </b>
         </BootstrapDialogTitle>
         <DialogContent dividers>
-          <div className="modaldivder" >
+          <div className="modaldivder">
+            <h4>
+              {" "}
+              Blood Availiability :
+              {props.num == 500 ? (
+                <CheckIcon
+                  style={{
+                    color: "green",
+                    marginRight: "20px",
+                    marginLeft: "20px",
+                  }}
+                />
+              ) : (
+                <CloseIcon style={{ color: "red", marginLeft: "20px" }} />
+              )}
+            </h4>
 
+            <h4>
+              {" "}
+              Oxygen Availiability :
+              {props.num1 == 510 ? (
+                <CheckIcon
+                  style={{
+                    color: "green",
+                    marginRight: "20px",
+                    marginLeft: "20px",
+                  }}
+                />
+              ) : (
+                <CloseIcon style={{ color: "red", marginLeft: "20px" }} />
+              )}
+            </h4>
 
-     <h4> Blood Availiability :{(props.num==500)? <CheckIcon style={{ color: "green", marginRight:"20px",marginLeft:"20px" }} />: <CloseIcon style={{ color: "red", marginLeft:"20px"  }} /> }
-        
-        </h4> 
-        
-    
-        <h4> Oxygen Availiability :{(props.num1==510)?<CheckIcon style={{ color: "green", marginRight:"20px",marginLeft:"20px"  }}  />: <CloseIcon style={{ color: "red", marginLeft:"20px"  }} /> }
-        
-        </h4> 
-    
-        <h4> Doctor Availiability :    <Button variant="contained" size="small" onClick={gotodetail}> Go for booking! </Button>
-        
-        </h4> 
-        
-        <h4> Bed Availiability :  { (props.num2==520)?<CheckIcon style={{ color: "green", marginRight:"20px",marginLeft:"20px"  }}  />: <CloseIcon style={{ color: "red", marginLeft:"20px"  }} /> }
-        
-        </h4> 
-        <h4> Other Services : <Button variant="contained" size="small" > Check services ! </Button>
-      
-        </h4> 
+            <h4>
+              {" "}
+              Doctor Availiability :{" "}
+              <Button variant="contained" size="small" onClick={gotodetail}>
+                {" "}
+                Go for booking!{" "}
+              </Button>
+            </h4>
 
-
+            <h4>
+              {" "}
+              Bed Availiability :{" "}
+              {props.num2 == 520 ? (
+                <CheckIcon
+                  style={{
+                    color: "green",
+                    marginRight: "20px",
+                    marginLeft: "20px",
+                  }}
+                />
+              ) : (
+                <CloseIcon style={{ color: "red", marginLeft: "20px" }} />
+              )}
+            </h4>
+            <h4>
+              {" "}
+              Other Services :{" "}
+              <Button variant="contained" size="small">
+                {" "}
+                Check services !{" "}
+              </Button>
+            </h4>
           </div>
-          
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={props.handleClose}>
-           Submit
+            Submit
           </Button>
         </DialogActions>
       </BootstrapDialog>
