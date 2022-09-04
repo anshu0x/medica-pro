@@ -23,40 +23,40 @@ function Home() {
             <h1>who take your insurance</h1>
           </div>
 
-          <div className="find_doctors">
-            <div>
-              <AiOutlineSearch />
-              <input
-                placeholder="Condition, procedure, doctor..."
-                className="input_field"
-                type="text"
-              />
+            <div className="find_doctors">
+              <div>
+                <AiOutlineSearch />
+                <input
+                  placeholder="Condition, procedure, doctor..."
+                  className="input_field"
+                  type="text"
+                />
+              </div>
+              <div>
+                <GoLocation />
+                <input
+                  placeholder="City, state, or zip code"
+                  className="input_field"
+                  type="text"
+                />
+              </div>
+              <div>
+                <AiOutlineCalendar />
+                <input placeholder="Today" className="input_field" type="text" />
+              </div>
+              <div>
+                <FaIdCard />
+                <input
+                  placeholder="Insurance carrier and plan"
+                  className="input_field"
+                  type="text"
+                />
+              </div>
+              <button id="search_inp_grid">
+                {" "}
+                <BsSearch />
+              </button>
             </div>
-            <div>
-              <GoLocation />
-              <input
-                placeholder="City, state, or zip code"
-                className="input_field"
-                type="text"
-              />
-            </div>
-            <div>
-              <AiOutlineCalendar />
-              <input placeholder="Today" className="input_field" type="text" />
-            </div>
-            <div>
-              <FaIdCard />
-              <input
-                placeholder="Insurance carrier and plan"
-                className="input_field"
-                type="text"
-              />
-            </div>
-            <button id="search_inp_grid">
-              {" "}
-              <BsSearch />
-            </button>
-          </div>
         </div>
       </div>
 

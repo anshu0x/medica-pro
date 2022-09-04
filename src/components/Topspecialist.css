@@ -62,4 +62,10 @@
     flex-direction: column;
     border-radius: 20px;
   }
+  .specialist h1 {
+    color: #00234b;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
 }

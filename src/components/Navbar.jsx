@@ -1,61 +1,65 @@
-import React, { useState } from "react";
-import "./Navbar.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { FaMedrt } from "react-icons/fa";
-
-const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
-
+import { NavLink } from "react-router-dom";
+import { RiMenu2Line } from "react-icons/ri";
+import "./Navbar.css";
+export default function Navbar() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  useEffect(() => {
+    if (isNavExpanded) {
+      document.body.style.overflow = "hidden";
+    } else if (!isNavExpanded) {
+      document.body.style.overflow = "auto";
+    }
+  }, [isNavExpanded]);
   return (
-    <>
-      <nav className="main-nav">
-        <div className="logo">
-          <NavLink to="/">
-            <FaMedrt />
-            Medicee
-          </NavLink>
-        </div>
-
-        <div
-          className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }
-        >
-          <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-
-            <li>
-              <NavLink to="/services">Services</NavLink>
-            </li>
-           
-            <li>
-              <NavLink to="/login">Log In</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About Us</NavLink>
-            </li>
-
-            <li>
-              <NavLink to="/faq">FAQ</NavLink>
-            </li>
-            
-          </ul>
-        </div>
-
-        <div className="social-media">
-          {/* hamburget menu start  */}
-          <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
-            </a>
-          </div>
-        </div>
-      </nav>
-    </>
+    <nav className="navigation">
+      <NavLink to="/" className="brand-name">
+        <FaMedrt />
+        <a> Medicee</a>
+      </NavLink>
+      <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
+        {/* hamburger svg code... */}
+        <RiMenu2Line />
+      </button>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li>
+            <NavLink exact activeClassName="active-link" to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact activeClassName="active-link" to="/services">
+              Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact activeClassName="active-link" to="/faq">
+              Faq
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact activeClassName="active-link" to="/about">
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact activeClassName="active-link" to="/login">
+              Login
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
-};
-
-export default Navbar;
+}
