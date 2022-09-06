@@ -7,7 +7,7 @@
 .doctors_card {
   width: 80vw;
 
-  height: 500px;
+  height: 100%;
 
   /* border: 1px solid; */
   flex-direction: column;
