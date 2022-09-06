@@ -108,7 +108,8 @@
 
   .find_doctors {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 90%;
+    place-content: center;
     width: 100%;
     grid-template-rows: repeat(4, 1fr) 50px;
   }

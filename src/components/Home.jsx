@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./Navbar";
 import Topspecialist from "./Topspecialist";
 import "./Home.css";
-import Healthcare from "./Healthcare";
 import { AiOutlineSearch } from "react-icons/ai";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
@@ -23,44 +22,43 @@ function Home() {
             <h1>who take your insurance</h1>
           </div>
 
-            <div className="find_doctors">
-              <div>
-                <AiOutlineSearch />
-                <input
-                  placeholder="Condition, procedure, doctor..."
-                  className="input_field"
-                  type="text"
-                />
-              </div>
-              <div>
-                <GoLocation />
-                <input
-                  placeholder="City, state, or zip code"
-                  className="input_field"
-                  type="text"
-                />
-              </div>
-              <div>
-                <AiOutlineCalendar />
-                <input placeholder="Today" className="input_field" type="text" />
-              </div>
-              <div>
-                <FaIdCard />
-                <input
-                  placeholder="Insurance carrier and plan"
-                  className="input_field"
-                  type="text"
-                />
-              </div>
-              <button id="search_inp_grid">
-                {" "}
-                <BsSearch />
-              </button>
+          <div className="find_doctors">
+            <div>
+              <AiOutlineSearch />
+              <input
+                placeholder="Condition, procedure, doctor..."
+                className="input_field"
+                type="text"
+              />
             </div>
+            <div>
+              <GoLocation />
+              <input
+                placeholder="City, state, or zip code"
+                className="input_field"
+                type="text"
+              />
+            </div>
+            <div>
+              <AiOutlineCalendar />
+              <input placeholder="Today" className="input_field" type="date" />
+            </div>
+            <div>
+              <FaIdCard />
+              <input
+                placeholder="Insurance carrier and plan"
+                className="input_field"
+                type="tel"
+              />
+            </div>
+            <button id="search_inp_grid">
+              {" "}
+              <BsSearch />
+            </button>
+          </div>
         </div>
       </div>
 
-      <Healthcare />
       <Topspecialist />
 
       <Contact />
